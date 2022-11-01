@@ -29,8 +29,9 @@ keyboard.forEach((key)=>{
   document.querySelector(`#key${event.key}`).classList.add('active')
   console.log(document.querySelector(`#key${event.key}`).classList)
   document.querySelector('.active').style=`
-  animation: animatename 1s linear infinite;
   background-color:${ generateRandomColor()} ;
+  
+  
   `
 })
 
@@ -51,7 +52,9 @@ keyboard.forEach((key)=>{
   display: flex;
   flex-wrap: wrap;
 }
-
+.active{
+  animation: animatename 1s linear infinite;
+}
 @keyframes animatename{
   0%{
   opacity: 0;
